@@ -1,0 +1,2 @@
+string missionType
+GPS gps

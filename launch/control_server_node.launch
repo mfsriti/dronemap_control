@@ -1,0 +1,11 @@
+<launch>
+   
+  <arg name="port_number" default="5555"/> 
+  <arg name="buffer_size" default="1024"/>
+
+  <node name="dronemap_control_server" pkg="dronemap_control" type="control_server_node.py"  output="screen">
+    <param name="port_number" value="$(arg port_number)"/>
+    <param name="buffer_size" value="$(arg buffer_size)"/>
+  </node>
+  
+</launch>

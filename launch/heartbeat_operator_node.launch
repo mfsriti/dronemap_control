@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="dronemap_heartbeat_operator" pkg="dronemap_control" type="heartbeat_operator_node.py"  output="screen">
+  </node>
+  
+</launch>

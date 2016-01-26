@@ -1,0 +1,13 @@
+<launch>
+   
+  <arg name="cloud_platform_ip_address" default="192.168.1.101"/> 
+  <arg name="cloud_platform_port_number" default="8001"/> 
+  <arg name="buffer_size" default="1024"/>
+
+  <node name="dronemap_control_operator" pkg="dronemap_control" type="control_operator_node.py"  output="screen">
+    <param name="cloud_platform_ip_address" value="$(arg cloud_platform_ip_address)"/>
+    <param name="cloud_platform_port_number" value="$(arg cloud_platform_port_number)"/>
+    <param name="buffer_size" value="$(arg buffer_size)"/>
+  </node>
+  
+</launch>

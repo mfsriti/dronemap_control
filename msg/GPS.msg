@@ -1,0 +1,3 @@
+GPSCoordinate latitude
+GPSCoordinate longitude
+string unit
